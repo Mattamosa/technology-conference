@@ -13,24 +13,22 @@ nav button {
 }
 
 nav {
-  margin-left: 2%;
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
-}
-ul li {
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-  list-style-type: none;
-}
-ul li a {
-  border: none;
-  font-size: 1rem;
-  padding: 0.9rem 1.2rem;
-  color: rgba(255, 255, 255, 1);
-  text-decoration: none;
-  -webkit-transition: background 0.3s linear;
-  transition: background 0, 3s linear;
-}
-ul li a:hover {
-  background: darken($menuColor, 5%);
+  margin-left: 0;
+  ul li {
+    list-style-type: none;
+  }
+  ul li a {
+    border: none;
+    font-size: 1rem;
+    padding: 0.9rem 1.2rem;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    -webkit-transition: background 0.3s linear;
+    transition: background 0, 3s linear;
+  }
+  ul li a:hover {
+    background: darken($menuColor, 5%);
+  }
 }
 
 header {
@@ -47,6 +45,27 @@ header {
   }
 }
 
+/*------- HERO TEXT START-------*/
+div#mainWrapper main div.hero {
+  div {
+    line-height: 0.3rem;
+    font-size: 1.2rem;
+    padding-bottom: 0.8rem;
+    h3 {
+      margin-left: 0.8rem;
+    }
+    p {
+      margin-left: 0.8rem;
+    }
+  }
+}
+
+/*---- END OF HERO AND TXT -------*/
+
+div#mainWrapper main p {
+  margin-left: 1.1rem;
+}
+
 /*---- START OF FLIP CARDS -------*/
 .cards {
   display: flex;
@@ -59,7 +78,6 @@ header {
   background-color: transparent;
   width: 47%;
   height: 300px;
-  border: 1px solid #f1f1f1;
   perspective: 1000px;
   padding: 0.7rem;
   margin: 0.6rem;

@@ -424,6 +424,11 @@ nav button .bottom {
 }
 
 /*---- NAVIGATION END -------*/
+div#mainWrapper main h1,
+p {
+  margin: 0.8rem 16px;
+}
+
 /*---- MAIN START -------*/
 .hero {
   position: relative;
@@ -434,18 +439,21 @@ nav button .bottom {
 }
 .hero div {
   position: absolute;
-  bottom: 0px;
+  bottom: 4px;
   left: 0px;
   right: 0;
   color: white;
-  padding: 10px;
+  padding: 5px;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 40%);
+  line-height: 0.2rem;
 }
 .hero div h3 {
   text-shadow: 0 0 2px #000;
+  margin-left: 0.6rem;
 }
 .hero div p {
   text-shadow: 0 0 2px #000;
+  margin-left: 0.6rem;
 }
 
 /*---- HERO END -------*/
@@ -455,14 +463,18 @@ nav button .bottom {
   margin: 0.8rem;
 }
 
+.cards img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .flip-card {
   background-color: transparent;
   width: 100%;
-  height: 300px;
-  border: 1px solid #f1f1f1;
+  height: 275px;
   perspective: 1000px;
-  padding: 1rem;
-  margin: 0.8rem 0;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
 }
 
 .flip-card-inner {
@@ -487,7 +499,7 @@ nav button .bottom {
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: transparent;
   color: black;
 }
 
@@ -527,14 +539,12 @@ footer p {
     display: flex;
   }
   nav {
-    margin-left: 2%;
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    margin-left: 0;
   }
-  ul li {
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+  nav ul li {
     list-style-type: none;
   }
-  ul li a {
+  nav ul li a {
     border: none;
     font-size: 1rem;
     padding: 0.9rem 1.2rem;
@@ -542,7 +552,7 @@ footer p {
     text-decoration: none;
     transition: background 0, 3s linear;
   }
-  ul li a:hover {
+  nav ul li a:hover {
     background: #e60000;
   }
   header {
@@ -558,6 +568,22 @@ footer p {
     padding-top: 0.3rem;
     font-size: 0.5rem;
   }
+  /*------- HERO TEXT START-------*/
+  div#mainWrapper main div.hero div {
+    line-height: 0.3rem;
+    font-size: 1.2rem;
+    padding-bottom: 0.8rem;
+  }
+  div#mainWrapper main div.hero div h3 {
+    margin-left: 0.8rem;
+  }
+  div#mainWrapper main div.hero div p {
+    margin-left: 0.8rem;
+  }
+  /*---- END OF HERO AND TXT -------*/
+  div#mainWrapper main p {
+    margin-left: 1.1rem;
+  }
   /*---- START OF FLIP CARDS -------*/
   .cards {
     display: flex;
@@ -569,7 +595,6 @@ footer p {
     background-color: transparent;
     width: 47%;
     height: 300px;
-    border: 1px solid #f1f1f1;
     perspective: 1000px;
     padding: 0.7rem;
     margin: 0.6rem;
@@ -593,6 +618,22 @@ footer p {
   header h3 {
     font-size: 1.2rem;
   }
+  /*---- END OF HEADER -------*/
+  /*------- HERO TEXT START-------*/
+  div#mainWrapper main div.hero div {
+    line-height: 0.4rem;
+    padding-bottom: 0.8rem;
+  }
+  div#mainWrapper main div.hero div h3 {
+    margin-left: 0.8rem;
+  }
+  div#mainWrapper main div.hero div p {
+    margin-left: 0.8rem;
+  }
+  /*---- MAIN -------*/
+  main h1 {
+    margin-left: 0;
+  }
   /*---- START OF FLIP CARDS -------*/
   .cards {
     display: flex;
@@ -604,9 +645,8 @@ footer p {
     background-color: transparent;
     width: 47%;
     height: 300px;
-    border: 1px solid #f1f1f1;
     perspective: 1000px;
     padding: 0.7rem;
-    margin: 0.8rem;
+    margin: 0.2rem;
   }
 }
