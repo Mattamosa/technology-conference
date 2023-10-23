@@ -57,6 +57,14 @@ main h1 {
   width: 47%;
   height: 300px;
   perspective: 1000px;
-  padding: 0.7rem;
+  padding: 0.9rem;
   margin: 0.2rem;
+}
+
+.flip-card h2 {
+  margin-bottom: 1.4rem;
+}
+
+.flip-card p {
+  line-height: 1.3rem;
 }

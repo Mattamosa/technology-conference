@@ -444,7 +444,8 @@ p {
   right: 0;
   color: white;
   padding: 5px;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 40%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6026611328) 10%, rgba(0, 0, 0, 0.403781581) 65%, rgba(0, 0, 0, 0) 100%);
   line-height: 0.2rem;
 }
 .hero div h3 {
@@ -514,23 +515,30 @@ body div#mainWrapper main p {
   background-color: #5c815f;
   color: white;
   transform: rotateY(180deg);
-  padding: 0.2rem;
+  padding: 0.1rem;
+  padding-bottom: 0.2rem;
+  min-height: 275px;
 }
 
-.flip-card-back h1 {
+.flip-card-back h2 {
   background-color: rgba(207, 227, 229, 0.3176470588);
   border: 1px solid white;
   border-radius: 5px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  margin: 0.8rem 0.5rem;
 }
 
-html body div#mainWrapper main section.cards div.flip-card div.flip-card-inner div.flip-card-back p {
-  font-size: 5px;
+.flip-card-back p {
+  margin: 0.3rem;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.1rem;
 }
 
 /*---- END OF FLIP CARDS -------*/
 /*---- START OF FOOTER -------*/
 #footerWrapper {
+  margin-top: 1rem;
   background-color: #4b6b4d;
 }
 
@@ -570,7 +578,7 @@ footer p {
     padding: 0.9rem 1.2rem;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    transition: background 0, 3s linear;
+    transition: background 0.3s linear;
   }
   nav ul li a:hover {
     background: #405c42;
@@ -623,7 +631,7 @@ footer p {
   .flip-card-back {
     padding: 0.6rem;
   }
-  .flip-card-back h1 {
+  .flip-card-back h2 {
     font-size: 2rem;
   }
 }
@@ -679,7 +687,13 @@ footer p {
     width: 47%;
     height: 300px;
     perspective: 1000px;
-    padding: 0.7rem;
+    padding: 0.9rem;
     margin: 0.2rem;
+  }
+  .flip-card h2 {
+    margin-bottom: 1.4rem;
+  }
+  .flip-card p {
+    line-height: 1.3rem;
   }
 }
