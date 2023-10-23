@@ -21,7 +21,7 @@ body {
 }
 /*---- HEADER START -------*/
 #headerWrapper {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   color: $fontColor;
   line-height: 1rem;
 }
@@ -34,7 +34,7 @@ header {
   h1 {
     margin: 0;
     font-size: 1.4rem;
-    font-weight: $normalWeight;
+    font-weight: $boldWeight;
   }
   h3 {
     margin: 0.2rem;
@@ -64,7 +64,7 @@ nav {
     font-size: 1.1rem;
     color: white;
     text-decoration: none;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
   ul li a:hover {
     background-color: rgba(0, 0, 0, 0.5);
@@ -139,6 +139,7 @@ p {
     h3 {
       text-shadow: 0 0 2px #000;
       margin-left: 0.6rem;
+      font-size: 1.3rem;
     }
     p {
       text-shadow: 0 0 2px #000;
@@ -146,6 +147,10 @@ p {
     }
   }
 } /*---- HERO END -------*/
+
+body div#mainWrapper main p {
+  font-size: 1.1rem;
+}
 
 /*---- START OF FLIP CARDS -------*/
 .cards {
@@ -156,6 +161,7 @@ p {
 .cards img {
   max-width: 100%;
   max-height: 100%;
+  border-radius: 5px;
 }
 
 .flip-card {
@@ -187,6 +193,7 @@ p {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-radius: 5px;
 }
 
 .flip-card-front {
@@ -195,20 +202,40 @@ p {
 }
 
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: #5c815f;
   color: white;
   transform: rotateY(180deg);
+  padding: 0.2rem;
+}
+
+.flip-card-back h1 {
+  background-color: #cfe3e551;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 1.7rem;
+}
+
+html
+  body
+  div#mainWrapper
+  main
+  section.cards
+  div.flip-card
+  div.flip-card-inner
+  div.flip-card-back
+  p {
+  font-size: 5px;
 }
 /*---- END OF FLIP CARDS -------*/
 
 /*---- START OF FOOTER -------*/
 #footerWrapper {
-  background-color: #01b2d6;
+  background-color: $menuColor;
 }
 footer {
   padding: 0.5rem $gutter;
   p {
-    color: #241818;
+    color: #ffffff;
     margin: 0;
     font-weight: $lightWeight;
     text-align: center;

@@ -10,6 +10,7 @@ nav button {
 }
 #primaryNav {
   display: flex;
+  justify-content: left;
 }
 
 nav {
@@ -53,6 +54,7 @@ div#mainWrapper main div.hero {
     padding-bottom: 0.8rem;
     h3 {
       margin-left: 0.8rem;
+      font-size: 1.5rem;
     }
     p {
       margin-left: 0.8rem;
@@ -76,9 +78,17 @@ div#mainWrapper main p {
 
 .flip-card {
   background-color: transparent;
-  width: 47%;
+  width: 48%;
   height: 300px;
   perspective: 1000px;
-  padding: 0.7rem;
-  margin: 0.6rem;
+  padding: 0.6rem;
+  margin: 0.2rem;
+}
+
+.flip-card-back {
+  padding: 0.6rem;
+}
+
+.flip-card-back h1 {
+  font-size: 2rem;
 }
