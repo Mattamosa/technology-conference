@@ -512,7 +512,7 @@ body div#mainWrapper main p {
 }
 
 .flip-card-back {
-  background-color: #5c815f;
+  background-color: #445f48;
   color: white;
   transform: rotateY(180deg);
   padding: 0.1rem;
